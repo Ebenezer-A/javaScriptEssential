@@ -1,6 +1,7 @@
-let authenticated = true;
+let authenticated = false;
 let userType = "employee";
 
+if(authenticated){
 switch(userType){
     case "employee":
         console.log("You have access to Dietary Service");
@@ -13,4 +14,7 @@ switch(userType){
         break;
     default:
         console.log("You need to enroll or at least subscribe first to avail this facility.");
+}
+} else {
+    console.log("user not authenticated");
 }
